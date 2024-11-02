@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Projet SNBot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    html {
+        font-family: Helvetica;
+        margin: 0px auto;
+        text-align: center;
+    }
+    h1 {
+        color: #0F3376;
+        padding: 2vh;
+    }
+    p {
+        font-size: 24px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+        grid-template-rows: repeat(3, auto); /* 3 lignes */
+        gap: 20px; /* Espacement entre les boutons */
+        justify-items: center; /* Centre les boutons dans les cellules */
+        align-items: center;
+        margin-top: 20px;
+    }
+    .grid-container a {
+        text-decoration: none;
+    }
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        padding: 15px 32px;
+        font-size: 30px;
+    }
+    .button2 {
+        background-color: #f44336;
+    }
+    .button3 {
+        background-color: #f4f436;
+    }
+    .button4 {
+        background-color: #5643F4;
+    }
+    .empty {
+        visibility: hidden; /* Rend les cellules vides invisibles */
+    }
+    </style>
+    </head>
+    <body>
+    <h1>Projet SNBot</h1>
+
+    <div class="grid-container">
+        <div class="empty"></div> <!-- Cellule vide -->
+        <a href="/haut"><button class="button">haut</button></a>
+        <div class="empty"></div> <!-- Cellule vide -->
+
+        <a href="/gauche"><button class="button button4">gauche</button></a>
+        <div class="empty"></div> <!-- Cellule vide au centre -->
+        <a href="/droit"><button class="button button3">droit</button></a>
+
+        <div class="empty"></div> <!-- Cellule vide -->
+        <a href="/bas"><button class="button button2">bas</button></a>
+        <div class="empty"></div> <!-- Cellule vide -->
+    </div>
+
+    </body>
+</html>
